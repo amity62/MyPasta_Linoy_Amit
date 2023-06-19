@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>My Pasta - מתכונים</title>
+    <meta name="description" content="עמוד שמציג 3 קטגוריות של מתכונים - חלבי, בשרי וטבעוני" />
+    <meta name="keywords" content="חלבי, בשרי, טבעוני, מתכון, פסטה" />
+    <meta name="author" content="Linoy Behar & Amit Yerushalmi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/farfalle.png" />
+
+</head>
+<body>
+    <header>
+
+        <h1 id="firstTitle"> מתכונים </h1>
+        
+        <nav class="pageNav" aria-label="תפריט פירורי לחם">
+            <ol>
+                <li> <a href="index.html"> עמוד הבית </a></li>
+                <li> <a href="recipes.html">  מתכונים </a></li>
+            </ol>
+
+        </nav>
+
+        <p id="rIntro">
+            ברוכים הבאים לעמוד המתכונים שלנו! <br />
+            במקום זה, תמצאו את הפסטה בתפקיד הראשי. <br />
+            פה תוכלו לגלות מגוון רחב של מתכונים של פסטה - מהמסורתיים ועד המודרניים, מהפשוטים ועד המורכבים. תמצאו כאן השראה והוראות ברורות כיצד להכין את המנה האיטלקית האהובה עליכם.
+        </p>
+
+        <nav id="mainNav" aria-label="תפריט ראשי">
+            <ul>
+                <li>
+                    <a href="index.html"><img id="logo" src="images/farfalle.png" alt=" לוגו האתר" /> </a>
+                </li>
+                <li>
+                    <a href="pastaSauces.html"> סוגי פסטות ורטבים </a>
+                    <ul id="kinds">
+                        <li> <a href="pastaKinds.html"> סוגי פסטות </a>  </li>
+                        <li> <a href="#" class="notActive"> סוגי רטבים </a> </li>
+                        <li> <a href="#" class="notActive"> שילובים </a> </li>
+                    </ul>
+                </li>
+
+                <li class="out"> <a href="#" class="notActive"> להכין פסטה </a> </li>
+
+                <li>
+                    <a href="recipes.html"> מתכונים </a>
+                    <ul id="recipes">
+                        <li> <a href="dairy.html"> חלבי </a> </li>
+                        <li> <a href="#" class="notActive"> בשרי </a> </li>
+                        <li> <a href="#" class="notActive"> טבעוני </a> </li>
+                    </ul>
+                </li>
+
+                <li class="out"> <a href="#" class="notActive"> היסטוריה </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    
+
+    <div id="totalRPhotos">
+        <div class="rPhotos">
+            <a class="rTitle" href="dairy.html"> חלבי </a>
+            <br /><br />
+            <a href="dairy.html"> <img class="rKinds" src="images/פסטה חלבית.jpg" alt="פסטה חלבית"/> </a>
+            <br /><br />
+            <p> בין אם אתם מעדיפים את המתיקות של רוטב אלפרדו, או את הקרמיות של פסטה ברוטב שמנת וגבינה, יש לנו משהו שישאיר אתכם מרוצים. תתכוננו לקבל את המתכונים הטובים ביותר שתוכלו למצוא!  </p>
+        </div>
+
+        <div class="rPhotos">
+            <a class="rTitle" id="rTitleActive" href="#"> בשרי </a>
+            <br /><br />
+            <a href="#" class="notActive"> <img class="rKinds" src="images/פסטה בשרית.jpg" alt="פסטה בשרית" /> </a>
+            <br /><br />
+            <p> אין כמו מנת פסטה בשרית, שמשלבת פסטה עם טעם של בשר איכותי. בין אם אתם מעדיפים רוטב בולונז או רוטב עגבניות עם כדורי בשר. בואו ללמוד להכין מגוון של מתכונים. נפגשים בפנים! </p>
+        </div>
+
+        <div class="rPhotos">
+            <a class="rTitle" id="rTitleActive" href="#"> טבעוני </a>
+            <br /><br />
+            <a href="#" class="notActive"> <img class="rKinds" src="images/פסטה טבעונית.jpg" alt="פסטה טבעונית" /> </a>
+            <br /><br />
+            <p>
+                עם מגוון של מרכיבים מלאי צבע וחומרים מזינים. אם אתם אוהבים רוטב פסטו או פשוט אוהבים את הפשטות של אולי אוליו עם שפע ירקות. תתכוננו לגלות מתכונים מדהימים שיאפשרו לכם להתפנק.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li class="fh"> <a class="last" href="about.html"> אודות </a> </li>
+            <li> <img class="pasta" src="images/farfalle.png" alt="" /> </li>
+            <li class="fh"> <a class="last" href="webMap.html"> מפת האתר </a> </li>
+            <li> <img class="pasta" src="images/farfalle.png" alt="" /> </li>
+            <li class="fh"> <a class="last" href="contact.html"> צור קשר </a> </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
