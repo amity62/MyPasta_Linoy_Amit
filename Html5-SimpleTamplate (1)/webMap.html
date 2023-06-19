@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>My Pasta - מפת אתר</title>
+    <meta name="description" content="עמוד שמציג את כל העמודים שפותחו באתר" />
+    <meta name="keywords" content="מפה, אתר, עמודים" />
+    <meta name="author" content="Linoy Behar & Amit Yerushalmi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/farfalle.png" />
+
+</head>
+<body>
+    <header>
+
+        <h1 id="firstTitle"> מפת האתר </h1>
+
+        <nav id="mainNav" aria-label="תפריט ראשי">
+            <ul>
+                <li>
+                    <a href="index.html"><img id="logo" src="images/farfalle.png" alt=" לוגו האתר"/> </a>
+                </li>
+                <li>
+                    <a href="pastaSauces.html"> סוגי פסטות ורטבים </a>
+                    <ul id="kinds">
+                        <li> <a href="pastaKinds.html"> סוגי פסטות </a>  </li>
+                        <li> <a href="#" class="notActive"> סוגי רטבים </a> </li>
+                        <li> <a href="#" class="notActive"> שילובים </a> </li>
+                    </ul>
+                </li>
+
+                <li class="out"> <a href="#" class="notActive"> להכין פסטה </a> </li>
+
+                <li>
+                    <a href="recipes.html"> מתכונים </a>
+                    <ul id="recipes">
+                        <li> <a href="dairy.html"> חלבי </a> </li>
+                        <li> <a href="#" class="notActive"> בשרי </a> </li>
+                        <li> <a href="#" class="notActive"> טבעוני </a> </li>
+                    </ul>
+                </li>
+
+                <li class="out"> <a href="#" class="notActive"> היסטוריה </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="map" >
+
+        <ul>
+            <li>
+                <a class="activeMap" href="index.html"> עמוד הבית </a>
+            </li>
+            <li>
+                <a class="activeMap" href="pastaSauces.html"> סוגי פסטות ורטבים </a>
+                <ul class="insideMap">
+                    <li> <a class="activeMap" href="pastaKinds.html"> סוגי פסטות </a>  </li>
+                    <li> <a href="#" class="notActiveGray"> סוגי רטבים </a> </li>
+                    <li> <a href="#" class="notActiveGray"> שילובים </a> </li>
+                </ul>
+            </li>
+
+            <li> <a href="#" class="notActiveGray"> להכין פסטה </a> </li>
+
+            <li>
+                <a class="activeMap" href="recipes.html"> מתכונים </a>
+                <ul class="insideMap" >
+                    <li> <a class="activeMap" href="dairy.html"> חלבי </a> </li>
+                    <li> <a href="#" class="notActiveGray"> בשרי </a> </li>
+                    <li> <a href="#" class="notActiveGray"> טבעוני </a> </li>
+                </ul>
+            </li>
+
+            <li> <a href="#" class="notActiveGray"> היסטוריה </a> </li>
+        </ul>
+
+    </section>
+
+
+
+    <footer>
+        <ul>
+            <li class="fh"> <a class="last" href="about.html"> אודות </a> </li>
+            <li> <img class="pasta" src="images/farfalle.png" alt=""/> </li>
+            <li class="fh"> <a class="last" href="webMap.html"> מפת האתר </a> </li>
+            <li> <img class="pasta" src="images/farfalle.png" alt=""/> </li>
+            <li class="fh"> <a class="last" href="contact.html"> צור קשר </a> </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
